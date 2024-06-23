@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="assets/css/login.css">
+</head>
+<body>
+    <main>
+
+        <div class="contenedor__todo">
+            <div class="caja__trasera">
+                <div class="caja__trasera-login">
+                    <h1>Tovar Prevent</h1>
+                    <h3>¿Ya tienes una cuenta?</h3>
+                    <p>Inicia sesión para entrar en la página</p>
+                    <button id="btn__iniciar-sesion" >Iniciar Sesión</button>
+                </div>
+                <div class="btn__iniciar-sesion">
+                    <h1>Tovar Prevent</h1>
+                    <h3>¿Aun no tienes cuenta?</h3>
+                    <p>Registrate para que puedas iniciar sesion</p>
+                    <button id="btn__registrarse">Regístrarse</button>
+                </div>
+            </div>
+
+            <!--Formulario de Login y registro-->
+            <div class="contenedor__login-register">
+                <!--Login-->
+                <form class="formulario__login" action="index.html">
+                    <h2>Iniciar Sesión</h2>
+                    <input type="email" placeholder="Correo Electronico" required name="user" id="user">
+                    <input type="password" placeholder="Contraseña" required name="clave" id="clave" class="clave1">
+                    <input type="button" class="btn_iniciar" name="button" id="login" value="Iniciar Sesion"  onclick="loguear()">
+                </form>
+
+                <!--Register Usuario-->
+                <form id="formulario_registro" action="validar_registro.php" method="POST" class="formulario__register">
+                    <h2>Regístrarse</h2>
+                    <input type="texto" placeholder="Nombre Completo" required id="nombre" class="input1">
+                    <input type="email" placeholder="Correo Electronico" required id="email" id="email" class="input14">
+                    <input type="texto" placeholder="Ususario" required id="usuario" class="input2">
+                    <input type="texto" placeholder="Contraseña" required id="contraseña" class="input3">
+                    
+                    <button class="btn_iniciar" type="button" name="button" id="registro">Registrar</button>
+                </form>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="js/script.js"></script>
+    <script src="js/sweetalert.min.js"></script>
+    <script src="js/bussinesLogic.js"></script>
+    <script src="js/uiLogic.js"></script>
+</body>
+</html>
